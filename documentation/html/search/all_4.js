@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['d_51',['D',['../params_8h.html#af316c33cc298530f245e8b55330e86b5',1,'params.h']]],
+  ['data_52',['data',['../structbitstream__t.html#abe222f6d3581e7920dcad5306cc906a8',1,'bitstream_t::data()'],['../structtritstream__t.html#abe222f6d3581e7920dcad5306cc906a8',1,'tritstream_t::data()']]],
+  ['dec_53',['DEC',['../_c_make_c_compiler_id_8c.html#ad1280362da42492bbc11aa78cbf776ad',1,'CMakeCCompilerId.c']]],
+  ['decode_54',['decode',['../decode_8h.html#ac18cd0d378516aeddca989fd757584a2',1,'decode(vf3_e *e, vf3_e *s, wave_sk_t *sk):&#160;decode.c'],['../decode_8c.html#ac18cd0d378516aeddca989fd757584a2',1,'decode(vf3_e *e, vf3_e *s, wave_sk_t *sk):&#160;decode.c']]],
+  ['decode_2ec_55',['decode.c',['../decode_8c.html',1,'']]],
+  ['decode_2eh_56',['decode.h',['../decode_8h.html',1,'']]],
+  ['decode_5fsignature_57',['decode_signature',['../verify_8c.html#a298df8b73c776537c217aa51bdca993d',1,'verify.c']]],
+  ['decode_5fu_58',['decode_u',['../decode_8h.html#a551e908fb870c44849194dc1aa50719e',1,'decode_u(vf3_e *e_u, vf3_e *y_u, vf3_e *e_v, wave_sk_t *sk):&#160;decode.c'],['../decode_8c.html#a551e908fb870c44849194dc1aa50719e',1,'decode_u(vf3_e *e_u, vf3_e *y_u, vf3_e *e_v, wave_sk_t *sk):&#160;decode.c']]],
+  ['decode_5fv_59',['decode_v',['../decode_8c.html#ab4e5d5c8cd695fe73d561afe0cbb9255',1,'decode_v(vf3_e *e_v, vf3_e *y_v, wave_sk_t *sk):&#160;decode.c'],['../decode_8h.html#ab4e5d5c8cd695fe73d561afe0cbb9255',1,'decode_v(vf3_e *e_v, vf3_e *y_v, wave_sk_t *sk):&#160;decode.c']]],
+  ['decompress_60',['decompress',['../compress_8h.html#af9d4f7ba4f4f13c5ebd8ae7829dba45a',1,'decompress(bitstream_t *stream, vf3_e *vec):&#160;compress_comb.c'],['../compress__comb_8c.html#af9d4f7ba4f4f13c5ebd8ae7829dba45a',1,'decompress(bitstream_t *stream, vf3_e *vec):&#160;compress_comb.c']]],
+  ['default_61',['default',['../namespacegen__trit__comp.html#affb1327b18bf08a379d19eef89cf1ed1',1,'gen_trit_comp']]],
+  ['dist_62',['dist',['../structfdistrib.html#a76050892111c1abc1817a926980da3fe',1,'fdistrib']]],
+  ['distrib_63',['distrib',['../structdistrib.html',1,'']]],
+  ['distrib_5f128nist_2ec_64',['distrib_128nist.c',['../distrib__128nist_8c.html',1,'']]],
+  ['distrib_5ftoy_2ec_65',['distrib_toy.c',['../distrib__toy_8c.html',1,'']]],
+  ['djbsort_2eh_66',['djbsort.h',['../djbsort_8h.html',1,'']]],
+  ['djbsort_5fnetwork_67',['djbsort_network',['../mf3permut_8c.html#ab3a2d11959339630097265da91ef815b',1,'mf3permut.c']]],
+  ['djbsort_5fnetwork_5ffree_68',['djbsort_network_free',['../mf3permut_8c.html#a32813c8fee0992cdeb50b309f26d59c5',1,'mf3permut.c']]],
+  ['djbsort_5fportable_2ec_69',['djbsort_portable.c',['../djbsort__portable_8c.html',1,'']]],
+  ['domain_5fu_70',['DOMAIN_U',['../config_8h.html#ad51322737a055fe1cd677858ae4e8068',1,'config.h']]],
+  ['domain_5fv_71',['DOMAIN_V',['../config_8h.html#a508a6dda09906fb233b7c8ba48301fdf',1,'config.h']]],
+  ['doxygen_5fconfig_2edox_72',['doxygen_config.dox',['../doxygen__config_8dox.html',1,'']]],
+  ['drbg_5fctx_73',['DRBG_ctx',['../rng_8c.html#a0ee790a3ae62a7563a6c1a39be4b3278',1,'rng.c']]],
+  ['du_74',['DU',['../distrib__128nist_8c.html#ac864999064b62a4b40ef2a3250e9f9c6',1,'DU():&#160;distrib_128nist.c'],['../distrib__toy_8c.html#ac864999064b62a4b40ef2a3250e9f9c6',1,'DU():&#160;distrib_toy.c']]],
+  ['dv_75',['DV',['../distrib__128nist_8c.html#a620ed1cc4e1ff2258af88c7b5146595f',1,'DV():&#160;distrib_128nist.c'],['../distrib__toy_8c.html#a620ed1cc4e1ff2258af88c7b5146595f',1,'DV():&#160;distrib_toy.c']]]
+];

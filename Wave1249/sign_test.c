@@ -1,0 +1,1 @@
+../common/sign_test.c

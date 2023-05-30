@@ -1,0 +1,1 @@
+../common/verify_test.c

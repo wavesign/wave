@@ -1,0 +1,26 @@
+var files_dup =
+[
+    [ "cmake-build-debug", "dir_95e29a8b8ee7c54052c171a88bb95675.html", "dir_95e29a8b8ee7c54052c171a88bb95675" ],
+    [ "fq_arithmetic", "dir_a929efa258b4466b9b139c51e89f39ea.html", "dir_a929efa258b4466b9b139c51e89f39ea" ],
+    [ "NIST-kat", "dir_c5dffd81427be4d2811f411918ed210c.html", "dir_c5dffd81427be4d2811f411918ed210c" ],
+    [ "prng", "dir_5a4e753d555bcbf542e2d8a1dece6bc0.html", "dir_5a4e753d555bcbf542e2d8a1dece6bc0" ],
+    [ "util", "dir_23ec12649285f9fabf3a6b7380226c28.html", "dir_23ec12649285f9fabf3a6b7380226c28" ],
+    [ "wave", "dir_196a207b9e54d198efe5479da03355cd.html", "dir_196a207b9e54d198efe5479da03355cd" ],
+    [ "api.c", "api_8c_source.html", null ],
+    [ "api.h", "api_8h_source.html", null ],
+    [ "combinadics_test.c", "combinadics__test_8c_source.html", null ],
+    [ "config.h", "config_8h_source.html", null ],
+    [ "gen_trit_comp.py", "gen__trit__comp_8py_source.html", null ],
+    [ "keygen.c", "keygen_8c_source.html", null ],
+    [ "keygen.h", "keygen_8h_source.html", null ],
+    [ "keygen_test.c", "keygen__test_8c_source.html", null ],
+    [ "main.c", "main_8c_source.html", null ],
+    [ "PQCgenKAT_sign.c", "_p_q_cgen_k_a_t__sign_8c_source.html", null ],
+    [ "params.h", "params_8h_source.html", null ],
+    [ "sign.c", "sign_8c_source.html", null ],
+    [ "sign.h", "sign_8h_source.html", null ],
+    [ "sign_test.c", "sign__test_8c_source.html", null ],
+    [ "verify.c", "verify_8c_source.html", null ],
+    [ "verify.h", "verify_8h_source.html", null ],
+    [ "verify_test.c", "verify__test_8c_source.html", null ]
+];

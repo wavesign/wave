@@ -1,0 +1,1 @@
+../common/gen_trit_comp.py

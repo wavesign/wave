@@ -1,0 +1,1 @@
+../common/keygen_test.c

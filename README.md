@@ -3,6 +3,8 @@
 Wave is a digital signature based in linear codes. In this repository, we have the reference implementation for the signature. 
 Wave has the most compact signatures in the code-based family. 
 
+More information go to: http://wave-sign.org/
+
 # Requirements
 To compile the code it is needed: 
 OpenSSL

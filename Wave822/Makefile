@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/obiwan/papers/waveimplemsoftware/Software/wave/wave2.0/Wave822
+CMAKE_SOURCE_DIR = /home/obiwan/latest_code/tmp/wave/Wave822
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/obiwan/papers/waveimplemsoftware/Software/wave/wave2.0/Wave822
+CMAKE_BINARY_DIR = /home/obiwan/latest_code/tmp/wave/Wave822
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/obiwan/papers/waveimplemsoftware/Software/wave/wave2.0/Wave822/CMakeFiles /home/obiwan/papers/waveimplemsoftware/Software/wave/wave2.0/Wave822//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/obiwan/latest_code/tmp/wave/Wave822/CMakeFiles /home/obiwan/latest_code/tmp/wave/Wave822//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/obiwan/papers/waveimplemsoftware/Software/wave/wave2.0/Wave822/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/obiwan/latest_code/tmp/wave/Wave822/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -181,19 +181,6 @@ PQCgenKAT_sign/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/build
 .PHONY : PQCgenKAT_sign/fast
 
-#=============================================================================
-# Target rules for targets named batch_sign
-
-# Build rule for target.
-batch_sign: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 batch_sign
-.PHONY : batch_sign
-
-# fast build rule for target.
-batch_sign/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/build
-.PHONY : batch_sign/fast
-
 NIST-kat/rng.o: NIST-kat/rng.c.o
 .PHONY : NIST-kat/rng.o
 
@@ -258,7 +245,6 @@ api.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/api.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/api.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/api.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/api.c.o
 .PHONY : api.c.o
 
 api.i: api.c.i
@@ -271,7 +257,6 @@ api.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/api.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/api.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/api.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/api.c.i
 .PHONY : api.c.i
 
 api.s: api.c.s
@@ -284,32 +269,7 @@ api.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/api.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/api.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/api.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/api.c.s
 .PHONY : api.c.s
-
-batch_sign.o: batch_sign.c.o
-.PHONY : batch_sign.o
-
-# target to build an object file
-batch_sign.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/batch_sign.c.o
-.PHONY : batch_sign.c.o
-
-batch_sign.i: batch_sign.c.i
-.PHONY : batch_sign.i
-
-# target to preprocess a source file
-batch_sign.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/batch_sign.c.i
-.PHONY : batch_sign.c.i
-
-batch_sign.s: batch_sign.c.s
-.PHONY : batch_sign.s
-
-# target to generate assembly for a file
-batch_sign.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/batch_sign.c.s
-.PHONY : batch_sign.c.s
 
 benchmark.o: benchmark.c.o
 .PHONY : benchmark.o
@@ -393,7 +353,6 @@ fq_arithmetic/mf3.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/fq_arithmetic/mf3.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/fq_arithmetic/mf3.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/fq_arithmetic/mf3.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/fq_arithmetic/mf3.c.o
 .PHONY : fq_arithmetic/mf3.c.o
 
 fq_arithmetic/mf3.i: fq_arithmetic/mf3.c.i
@@ -406,7 +365,6 @@ fq_arithmetic/mf3.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/fq_arithmetic/mf3.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/fq_arithmetic/mf3.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/fq_arithmetic/mf3.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/fq_arithmetic/mf3.c.i
 .PHONY : fq_arithmetic/mf3.c.i
 
 fq_arithmetic/mf3.s: fq_arithmetic/mf3.c.s
@@ -419,7 +377,6 @@ fq_arithmetic/mf3.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/fq_arithmetic/mf3.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/fq_arithmetic/mf3.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/fq_arithmetic/mf3.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/fq_arithmetic/mf3.c.s
 .PHONY : fq_arithmetic/mf3.c.s
 
 fq_arithmetic/vf2.o: fq_arithmetic/vf2.c.o
@@ -432,7 +389,6 @@ fq_arithmetic/vf2.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/fq_arithmetic/vf2.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/fq_arithmetic/vf2.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/fq_arithmetic/vf2.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/fq_arithmetic/vf2.c.o
 .PHONY : fq_arithmetic/vf2.c.o
 
 fq_arithmetic/vf2.i: fq_arithmetic/vf2.c.i
@@ -445,7 +401,6 @@ fq_arithmetic/vf2.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/fq_arithmetic/vf2.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/fq_arithmetic/vf2.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/fq_arithmetic/vf2.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/fq_arithmetic/vf2.c.i
 .PHONY : fq_arithmetic/vf2.c.i
 
 fq_arithmetic/vf2.s: fq_arithmetic/vf2.c.s
@@ -458,7 +413,6 @@ fq_arithmetic/vf2.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/fq_arithmetic/vf2.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/fq_arithmetic/vf2.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/fq_arithmetic/vf2.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/fq_arithmetic/vf2.c.s
 .PHONY : fq_arithmetic/vf2.c.s
 
 fq_arithmetic/vf3.o: fq_arithmetic/vf3.c.o
@@ -471,7 +425,6 @@ fq_arithmetic/vf3.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/fq_arithmetic/vf3.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/fq_arithmetic/vf3.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/fq_arithmetic/vf3.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/fq_arithmetic/vf3.c.o
 .PHONY : fq_arithmetic/vf3.c.o
 
 fq_arithmetic/vf3.i: fq_arithmetic/vf3.c.i
@@ -484,7 +437,6 @@ fq_arithmetic/vf3.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/fq_arithmetic/vf3.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/fq_arithmetic/vf3.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/fq_arithmetic/vf3.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/fq_arithmetic/vf3.c.i
 .PHONY : fq_arithmetic/vf3.c.i
 
 fq_arithmetic/vf3.s: fq_arithmetic/vf3.c.s
@@ -497,7 +449,6 @@ fq_arithmetic/vf3.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/fq_arithmetic/vf3.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/fq_arithmetic/vf3.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/fq_arithmetic/vf3.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/fq_arithmetic/vf3.c.s
 .PHONY : fq_arithmetic/vf3.c.s
 
 keygen.o: keygen.c.o
@@ -510,7 +461,6 @@ keygen.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/keygen.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/keygen.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/keygen.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/keygen.c.o
 .PHONY : keygen.c.o
 
 keygen.i: keygen.c.i
@@ -523,7 +473,6 @@ keygen.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/keygen.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/keygen.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/keygen.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/keygen.c.i
 .PHONY : keygen.c.i
 
 keygen.s: keygen.c.s
@@ -536,7 +485,6 @@ keygen.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/keygen.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/keygen.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/keygen.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/keygen.c.s
 .PHONY : keygen.c.s
 
 prng/fips202.o: prng/fips202.c.o
@@ -549,7 +497,6 @@ prng/fips202.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/prng/fips202.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/prng/fips202.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/prng/fips202.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/prng/fips202.c.o
 .PHONY : prng/fips202.c.o
 
 prng/fips202.i: prng/fips202.c.i
@@ -562,7 +509,6 @@ prng/fips202.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/prng/fips202.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/prng/fips202.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/prng/fips202.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/prng/fips202.c.i
 .PHONY : prng/fips202.c.i
 
 prng/fips202.s: prng/fips202.c.s
@@ -575,7 +521,6 @@ prng/fips202.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/prng/fips202.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/prng/fips202.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/prng/fips202.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/prng/fips202.c.s
 .PHONY : prng/fips202.c.s
 
 prng/prng.o: prng/prng.c.o
@@ -588,7 +533,6 @@ prng/prng.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/prng/prng.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/prng/prng.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/prng/prng.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/prng/prng.c.o
 .PHONY : prng/prng.c.o
 
 prng/prng.i: prng/prng.c.i
@@ -601,7 +545,6 @@ prng/prng.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/prng/prng.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/prng/prng.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/prng/prng.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/prng/prng.c.i
 .PHONY : prng/prng.c.i
 
 prng/prng.s: prng/prng.c.s
@@ -614,7 +557,6 @@ prng/prng.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/prng/prng.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/prng/prng.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/prng/prng.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/prng/prng.c.s
 .PHONY : prng/prng.c.s
 
 sign.o: sign.c.o
@@ -627,7 +569,6 @@ sign.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/sign.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/sign.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/sign.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/sign.c.o
 .PHONY : sign.c.o
 
 sign.i: sign.c.i
@@ -640,7 +581,6 @@ sign.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/sign.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/sign.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/sign.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/sign.c.i
 .PHONY : sign.c.i
 
 sign.s: sign.c.s
@@ -653,7 +593,6 @@ sign.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/sign.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/sign.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/sign.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/sign.c.s
 .PHONY : sign.c.s
 
 util/bitstream.o: util/bitstream.c.o
@@ -666,7 +605,6 @@ util/bitstream.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/util/bitstream.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/util/bitstream.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/util/bitstream.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/util/bitstream.c.o
 .PHONY : util/bitstream.c.o
 
 util/bitstream.i: util/bitstream.c.i
@@ -679,7 +617,6 @@ util/bitstream.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/util/bitstream.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/util/bitstream.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/util/bitstream.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/util/bitstream.c.i
 .PHONY : util/bitstream.c.i
 
 util/bitstream.s: util/bitstream.c.s
@@ -692,7 +629,6 @@ util/bitstream.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/util/bitstream.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/util/bitstream.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/util/bitstream.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/util/bitstream.c.s
 .PHONY : util/bitstream.c.s
 
 util/compress.o: util/compress.c.o
@@ -705,7 +641,6 @@ util/compress.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/util/compress.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/util/compress.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/util/compress.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/util/compress.c.o
 .PHONY : util/compress.c.o
 
 util/compress.i: util/compress.c.i
@@ -718,7 +653,6 @@ util/compress.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/util/compress.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/util/compress.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/util/compress.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/util/compress.c.i
 .PHONY : util/compress.c.i
 
 util/compress.s: util/compress.c.s
@@ -731,7 +665,6 @@ util/compress.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/util/compress.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/util/compress.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/util/compress.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/util/compress.c.s
 .PHONY : util/compress.c.s
 
 util/djbsort_portable.o: util/djbsort_portable.c.o
@@ -744,7 +677,6 @@ util/djbsort_portable.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/util/djbsort_portable.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/util/djbsort_portable.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/util/djbsort_portable.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/util/djbsort_portable.c.o
 .PHONY : util/djbsort_portable.c.o
 
 util/djbsort_portable.i: util/djbsort_portable.c.i
@@ -757,7 +689,6 @@ util/djbsort_portable.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/util/djbsort_portable.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/util/djbsort_portable.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/util/djbsort_portable.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/util/djbsort_portable.c.i
 .PHONY : util/djbsort_portable.c.i
 
 util/djbsort_portable.s: util/djbsort_portable.c.s
@@ -770,7 +701,6 @@ util/djbsort_portable.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/util/djbsort_portable.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/util/djbsort_portable.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/util/djbsort_portable.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/util/djbsort_portable.c.s
 .PHONY : util/djbsort_portable.c.s
 
 util/gauss.o: util/gauss.c.o
@@ -783,7 +713,6 @@ util/gauss.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/util/gauss.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/util/gauss.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/util/gauss.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/util/gauss.c.o
 .PHONY : util/gauss.c.o
 
 util/gauss.i: util/gauss.c.i
@@ -796,7 +725,6 @@ util/gauss.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/util/gauss.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/util/gauss.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/util/gauss.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/util/gauss.c.i
 .PHONY : util/gauss.c.i
 
 util/gauss.s: util/gauss.c.s
@@ -809,7 +737,6 @@ util/gauss.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/util/gauss.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/util/gauss.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/util/gauss.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/util/gauss.c.s
 .PHONY : util/gauss.c.s
 
 util/hash.o: util/hash.c.o
@@ -822,7 +749,6 @@ util/hash.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/util/hash.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/util/hash.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/util/hash.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/util/hash.c.o
 .PHONY : util/hash.c.o
 
 util/hash.i: util/hash.c.i
@@ -835,7 +761,6 @@ util/hash.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/util/hash.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/util/hash.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/util/hash.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/util/hash.c.i
 .PHONY : util/hash.c.i
 
 util/hash.s: util/hash.c.s
@@ -848,7 +773,6 @@ util/hash.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/util/hash.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/util/hash.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/util/hash.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/util/hash.c.s
 .PHONY : util/hash.c.s
 
 util/mf3permut.o: util/mf3permut.c.o
@@ -861,7 +785,6 @@ util/mf3permut.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/util/mf3permut.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/util/mf3permut.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/util/mf3permut.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/util/mf3permut.c.o
 .PHONY : util/mf3permut.c.o
 
 util/mf3permut.i: util/mf3permut.c.i
@@ -874,7 +797,6 @@ util/mf3permut.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/util/mf3permut.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/util/mf3permut.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/util/mf3permut.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/util/mf3permut.c.i
 .PHONY : util/mf3permut.c.i
 
 util/mf3permut.s: util/mf3permut.c.s
@@ -887,7 +809,6 @@ util/mf3permut.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/util/mf3permut.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/util/mf3permut.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/util/mf3permut.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/util/mf3permut.c.s
 .PHONY : util/mf3permut.c.s
 
 util/tritstream.o: util/tritstream.c.o
@@ -900,7 +821,6 @@ util/tritstream.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/util/tritstream.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/util/tritstream.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/util/tritstream.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/util/tritstream.c.o
 .PHONY : util/tritstream.c.o
 
 util/tritstream.i: util/tritstream.c.i
@@ -913,7 +833,6 @@ util/tritstream.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/util/tritstream.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/util/tritstream.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/util/tritstream.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/util/tritstream.c.i
 .PHONY : util/tritstream.c.i
 
 util/tritstream.s: util/tritstream.c.s
@@ -926,7 +845,6 @@ util/tritstream.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/util/tritstream.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/util/tritstream.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/util/tritstream.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/util/tritstream.c.s
 .PHONY : util/tritstream.c.s
 
 verify.o: verify.c.o
@@ -939,7 +857,6 @@ verify.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/verify.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/verify.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/verify.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/verify.c.o
 .PHONY : verify.c.o
 
 verify.i: verify.c.i
@@ -952,7 +869,6 @@ verify.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/verify.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/verify.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/verify.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/verify.c.i
 .PHONY : verify.c.i
 
 verify.s: verify.c.s
@@ -965,7 +881,6 @@ verify.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/verify.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/verify.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/verify.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/verify.c.s
 .PHONY : verify.c.s
 
 verify_test.o: verify_test.c.o
@@ -1002,7 +917,6 @@ wave/decode.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/wave/decode.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/wave/decode.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/wave/decode.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/wave/decode.c.o
 .PHONY : wave/decode.c.o
 
 wave/decode.i: wave/decode.c.i
@@ -1015,7 +929,6 @@ wave/decode.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/wave/decode.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/wave/decode.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/wave/decode.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/wave/decode.c.i
 .PHONY : wave/decode.c.i
 
 wave/decode.s: wave/decode.c.s
@@ -1028,7 +941,6 @@ wave/decode.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/wave/decode.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/wave/decode.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/wave/decode.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/wave/decode.c.s
 .PHONY : wave/decode.c.s
 
 wave/randperm.o: wave/randperm.c.o
@@ -1041,7 +953,6 @@ wave/randperm.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/wave/randperm.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/wave/randperm.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/wave/randperm.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/wave/randperm.c.o
 .PHONY : wave/randperm.c.o
 
 wave/randperm.i: wave/randperm.c.i
@@ -1054,7 +965,6 @@ wave/randperm.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/wave/randperm.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/wave/randperm.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/wave/randperm.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/wave/randperm.c.i
 .PHONY : wave/randperm.c.i
 
 wave/randperm.s: wave/randperm.c.s
@@ -1067,7 +977,6 @@ wave/randperm.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/wave/randperm.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/wave/randperm.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/wave/randperm.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/wave/randperm.c.s
 .PHONY : wave/randperm.c.s
 
 wave/reject.o: wave/reject.c.o
@@ -1080,7 +989,6 @@ wave/reject.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/wave/reject.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/wave/reject.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/wave/reject.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/wave/reject.c.o
 .PHONY : wave/reject.c.o
 
 wave/reject.i: wave/reject.c.i
@@ -1093,7 +1001,6 @@ wave/reject.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/wave/reject.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/wave/reject.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/wave/reject.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/wave/reject.c.i
 .PHONY : wave/reject.c.i
 
 wave/reject.s: wave/reject.c.s
@@ -1106,7 +1013,6 @@ wave/reject.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/wave/reject.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/wave/reject.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/wave/reject.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/wave/reject.c.s
 .PHONY : wave/reject.c.s
 
 wave/sample.o: wave/sample.c.o
@@ -1119,7 +1025,6 @@ wave/sample.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/wave/sample.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/wave/sample.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/wave/sample.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/wave/sample.c.o
 .PHONY : wave/sample.c.o
 
 wave/sample.i: wave/sample.c.i
@@ -1132,7 +1037,6 @@ wave/sample.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/wave/sample.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/wave/sample.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/wave/sample.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/wave/sample.c.i
 .PHONY : wave/sample.c.i
 
 wave/sample.s: wave/sample.c.s
@@ -1145,7 +1049,6 @@ wave/sample.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_speed.dir/build.make CMakeFiles/benchmark_speed.dir/wave/sample.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_time.dir/build.make CMakeFiles/benchmark_time.dir/wave/sample.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PQCgenKAT_sign.dir/build.make CMakeFiles/PQCgenKAT_sign.dir/wave/sample.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/batch_sign.dir/build.make CMakeFiles/batch_sign.dir/wave/sample.c.s
 .PHONY : wave/sample.c.s
 
 # Help Target
@@ -1157,7 +1060,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... PQCgenKAT_sign"
-	@echo "... batch_sign"
 	@echo "... benchmark"
 	@echo "... benchmark_speed"
 	@echo "... benchmark_time"
@@ -1171,9 +1073,6 @@ help:
 	@echo "... api.o"
 	@echo "... api.i"
 	@echo "... api.s"
-	@echo "... batch_sign.o"
-	@echo "... batch_sign.i"
-	@echo "... batch_sign.s"
 	@echo "... benchmark.o"
 	@echo "... benchmark.i"
 	@echo "... benchmark.s"

@@ -35,7 +35,7 @@ protection within the United States.
 
 #define CRYPTO_SECRETKEYBYTES (((N2 + N2 + 4) / 5) + 32 + 2 * N)
 #define CRYPTO_PUBLICKEYBYTES (((N - K) * K + 4) / 5)
-#define CRYPTO_BYTES (1185 + SALT_SIZE)
+#define CRYPTO_BYTES (1170 + SALT_SIZE)
 
 #define CRYPTO_ALGNAME "WAVE-1217"
 

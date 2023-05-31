@@ -1,52 +1,47 @@
-# Prerequisites
-*.d
-
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+/cmake-build-debug/
+/CMakeFiles/3.26.0/CompilerIdC/a.out
+/_deps/cmocka-subbuild/CMakeFiles/cmocka-populate.dir/build.make
+/_deps/cmocka-subbuild/CMakeFiles/cmake.check_cache
+/CMakeFiles/cmake.check_cache
+/_deps/cmocka-subbuild/CMakeFiles/cmocka-populate.dir/cmake_clean.cmake
+/_deps/cmocka-subbuild/cmake_install.cmake
+/CMakeFiles/3.26.0/CMakeASMCompiler.cmake
+/_deps/cmocka-subbuild/CMakeCache.txt
+/CMakeCache.txt
+/CMakeFiles/3.26.0/CMakeCCompiler.cmake
+/CMakeFiles/3.26.0/CompilerIdC/CMakeCCompilerId.c
+/_deps/cmocka-subbuild/CMakeFiles/CMakeConfigureLog.yaml
+/CMakeFiles/CMakeConfigureLog.yaml
+/CMakeFiles/3.26.0/CMakeDetermineCompilerABI_C.bin
+/_deps/cmocka-subbuild/CMakeFiles/CMakeDirectoryInformation.cmake
+/_deps/cmocka-subbuild/CMakeLists.txt
+/_deps/cmocka-subbuild/CMakeFiles/CMakeRuleHashes.txt
+/_deps/cmocka-subbuild/CMakeFiles/3.26.0/CMakeSystem.cmake
+/CMakeFiles/3.26.0/CMakeSystem.cmake
+/_deps/cmocka-subbuild/cmocka-populate-prefix/src/cmocka-populate-stamp/cmocka-populate-build
+/_deps/cmocka-subbuild/cmocka-populate-prefix/tmp/cmocka-populate-cfgcmd.txt
+/_deps/cmocka-subbuild/CMakeFiles/cmocka-populate-complete
+/_deps/cmocka-subbuild/cmocka-populate-prefix/src/cmocka-populate-stamp/cmocka-populate-configure
+/_deps/cmocka-subbuild/cmocka-populate-prefix/src/cmocka-populate-stamp/cmocka-populate-done
+/_deps/cmocka-subbuild/cmocka-populate-prefix/src/cmocka-populate-stamp/cmocka-populate-download
+/_deps/cmocka-subbuild/cmocka-populate-prefix/tmp/cmocka-populate-gitclone.cmake
+/_deps/cmocka-subbuild/cmocka-populate-prefix/src/cmocka-populate-stamp/cmocka-populate-gitclone-lastrun.txt
+/_deps/cmocka-subbuild/cmocka-populate-prefix/src/cmocka-populate-stamp/cmocka-populate-gitinfo.txt
+/_deps/cmocka-subbuild/cmocka-populate-prefix/tmp/cmocka-populate-gitupdate.cmake
+/_deps/cmocka-subbuild/cmocka-populate-prefix/src/cmocka-populate-stamp/cmocka-populate-install
+/_deps/cmocka-subbuild/cmocka-populate-prefix/src/cmocka-populate-stamp/cmocka-populate-mkdir
+/_deps/cmocka-subbuild/cmocka-populate-prefix/tmp/cmocka-populate-mkdirs.cmake
+/_deps/cmocka-subbuild/cmocka-populate-prefix/src/cmocka-populate-stamp/cmocka-populate-patch
+/_deps/cmocka-subbuild/cmocka-populate-prefix/src/cmocka-populate-stamp/cmocka-populate-test
+/_deps/cmocka-subbuild/CMakeFiles/cmocka-populate.dir/compiler_depend.make
+/_deps/cmocka-subbuild/CMakeFiles/cmocka-populate.dir/compiler_depend.ts
+/_deps/cmocka-subbuild/CMakeFiles/cmocka-populate.dir/DependInfo.cmake
+/_deps/cmocka-subbuild/CMakeFiles/cmocka-populate.dir/Labels.json
+/_deps/cmocka-subbuild/CMakeFiles/cmocka-populate.dir/Labels.txt
+/_deps/cmocka-subbuild/Makefile
+/_deps/cmocka-subbuild/CMakeFiles/Makefile.cmake
+/_deps/cmocka-subbuild/CMakeFiles/Makefile2
+/_deps/cmocka-subbuild/CMakeFiles/cmocka-populate.dir/progress.make
+/_deps/cmocka-subbuild/CMakeFiles/progress.marks
+/_deps/cmocka-subbuild/CMakeFiles/TargetDirectories.txt
+/documentation/latex/

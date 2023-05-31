@@ -13,7 +13,7 @@
 #include "NIST-kat/rng.h"
 
 
-#define ITERATIONS 100
+#define ITERATIONS 10
 uint64_t timekey_f[ITERATIONS];
 uint64_t time_sign_f[ITERATIONS];
 uint64_t time_verify_f[ITERATIONS];

@@ -34,7 +34,7 @@ protection within the United States.
 #include <string.h>
 
 #include "api.h"
-#include "rng.h"
+#include "NIST-kat/rng.h"
 
 #define MAX_MARKER_LEN 50
 

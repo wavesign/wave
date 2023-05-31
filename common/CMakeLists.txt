@@ -72,14 +72,14 @@ target_link_libraries(PQCgenKAT_sign OpenSSL::Crypto)
 target_include_directories(PQCgenKAT_sign PRIVATE NIST-kat .)
 target_compile_definitions(PQCgenKAT_sign PUBLIC NIST_KAT)
 
-add_executable(batch_sign batch_sign.c
-        keygen.c keygen.h sign.c sign.h verify.c verify.h cpucycles.h api.c api.h
-        fq_arithmetic/mf3.c fq_arithmetic/mf3.h fq_arithmetic/vf3.c fq_arithmetic/vf3.h fq_arithmetic/vf2.c fq_arithmetic/vf2.h
-        util/bitstream.c util/bitstream.h util/tritstream.c util/tritstream.h util/compress.h util/compress.c
-        prng/prng.c prng/prng.h prng/fips202.c prng/fips202.h
-        util/bitstream.c util/bitstream.h util/djbsort_portable.c util/djbsort.h util/gauss.c util/gauss.h util/hash.c util/hash.h util/popcount.h
-        wave/decode.c wave/decode.h  wave/randperm.c wave/randperm.h wave/reject.c wave/reject.h wave wave/sample.c wave/sample.h util/mf3permut.h util/mf3permut.c)
-target_link_libraries(batch_sign OpenSSL::Crypto)
-target_include_directories(batch_sign PRIVATE .)
-target_compile_definitions(batch_sign PUBLIC BATCH_SIGN)
-target_compile_definitions(batch_sign PUBLIC CHECK)
+#add_executable(batch_sign batch_sign.c
+#        keygen.c keygen.h sign.c sign.h verify.c verify.h cpucycles.h api.c api.h
+#        fq_arithmetic/mf3.c fq_arithmetic/mf3.h fq_arithmetic/vf3.c fq_arithmetic/vf3.h fq_arithmetic/vf2.c fq_arithmetic/vf2.h
+#        util/bitstream.c util/bitstream.h util/tritstream.c util/tritstream.h util/compress.h util/compress.c
+#        prng/prng.c prng/prng.h prng/fips202.c prng/fips202.h
+#        util/bitstream.c util/bitstream.h util/djbsort_portable.c util/djbsort.h util/gauss.c util/gauss.h util/hash.c util/hash.h util/popcount.h
+#        wave/decode.c wave/decode.h  wave/randperm.c wave/randperm.h wave/reject.c wave/reject.h wave wave/sample.c wave/sample.h util/mf3permut.h util/mf3permut.c)
+#target_link_libraries(batch_sign OpenSSL::Crypto)
+#target_include_directories(batch_sign PRIVATE .)
+#target_compile_definitions(batch_sign PUBLIC BATCH_SIGN)
+#target_compile_definitions(batch_sign PUBLIC CHECK)

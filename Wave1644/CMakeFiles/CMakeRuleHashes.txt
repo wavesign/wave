@@ -1,2 +1,0 @@
-# Hashes of file build rules.
-2a0ed5e456e3671e79dbbd9b3a8264c7 util/compress.c

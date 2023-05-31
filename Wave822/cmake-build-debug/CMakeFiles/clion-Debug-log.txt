@@ -1,4 +1,0 @@
-Cannot generate into /home/obiwan/papers/waveimplemsoftware/Software/wave/wave2.0/Wave822
-It was created with incompatible generator 'Unix Makefiles'
-
-Please either delete it manually or select another generation directory

@@ -1,8 +1,0 @@
-/home/obiwan/papers/waveimplemsoftware/Software/wave/wave2.0/Wave822/CMakeFiles/verify_test.dir
-/home/obiwan/papers/waveimplemsoftware/Software/wave/wave2.0/Wave822/CMakeFiles/benchmark.dir
-/home/obiwan/papers/waveimplemsoftware/Software/wave/wave2.0/Wave822/CMakeFiles/benchmark_speed.dir
-/home/obiwan/papers/waveimplemsoftware/Software/wave/wave2.0/Wave822/CMakeFiles/benchmark_time.dir
-/home/obiwan/papers/waveimplemsoftware/Software/wave/wave2.0/Wave822/CMakeFiles/PQCgenKAT_sign.dir
-/home/obiwan/papers/waveimplemsoftware/Software/wave/wave2.0/Wave822/CMakeFiles/batch_sign.dir
-/home/obiwan/papers/waveimplemsoftware/Software/wave/wave2.0/Wave822/CMakeFiles/edit_cache.dir
-/home/obiwan/papers/waveimplemsoftware/Software/wave/wave2.0/Wave822/CMakeFiles/rebuild_cache.dir

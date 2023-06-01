@@ -68,6 +68,9 @@ void expand(unsigned char *input, size_t len_input, size_t len_out, vf3_e *p) {
   shake256_inc_ctx_release(&sha3);
 }
 
+
+
+
 /**
  * Function:  convert_to_trits
  * --------------------
@@ -80,14 +83,26 @@ void expand(unsigned char *input, size_t len_input, size_t len_out, vf3_e *p) {
  *
  */
 
+ #define CHUNKS (HASH_SIZE/8) / 4
+ // i.e. CHUNKS = number of uint32_ts in dividend
+
+uint8_t divmod3(uint32_t * dividend){
+   uint64_t trit = 0;
+   for(int i = CHUNKS - 1; i >= 0; i--){
+      uint32_t u = dividend[i];   // <- holds a normal chunk
+      uint64_t x = trit << 32;   // <- big enough to hold inevitable overflow
+      x += u;
+      dividend[i] = x / 3;  // x / 3 will be 32 bits again
+      trit = x % 3;
+    }
+    return trit;
+ }
+
 void convert_to_trits(unsigned char *input, vf3_e *h3) {
-  size_t index = 0;
-  for (int i = 0; i < WORD_LENGTH; i++) {
-    uint8_t to_convert = input[i];
-    vf3_set_coeff(index, h3, (((to_convert % 3) - 1) + 3) % 3);
-    to_convert /= 3;
-    index++;
-  }
+    for (int i = 0; i < h3->size; i++) {
+        uint8_t trit = divmod3((uint32_t *)input);
+        vf3_set_coeff(i, h3, trit);
+    }
 }
 
 void hash_message(vf3_e *m_hash, const uint8_t *message, const size_t mlen,
